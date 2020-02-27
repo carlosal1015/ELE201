@@ -1,4 +1,5 @@
-function x = myFunction(Fs, f)
+% function x = myFunction(Fs, f)
+function [x, t] = myFunction(Fs, f)
 % function x = myFunction(Fs, f)
 % Fs is the sampling frequency
 % f is the frequency of sound
