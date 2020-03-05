@@ -1,17 +1,13 @@
-Fs = 8000 % sampling frequency in Hz
-f1 = 400
-f2 = 440
+% plot(tel)
+
+fftsig = fft(tel)
+Fs = 8000
 N = 1000
-T = N/Fs % duration of signal
-t = 0:1/Fs:T % time axis vector of sample times
-
-% plot(sig)
-
-fftsig = fft(x)
-
-f = -Fs/2:Fs/N:Fs/2;        % Frequency vector
+f = 0:Fs/9199:Fs;        % Frequency vector
 
 fftshiftsig = fftshift(fftsig)
+
+plot(fftshiftsig)
 
 subplot(2,1,1)
 plot(f,abs(fftshiftsig))
